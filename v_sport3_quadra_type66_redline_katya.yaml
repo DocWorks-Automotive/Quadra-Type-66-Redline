@@ -1,0 +1,167 @@
+Vehicle.v_sport3_quadra_type66_redline_katya:
+  $base: Vehicle.v_sport2_villefort_deleon_vindicator
+  entityTemplatePath: base\vehicles\sport\v_sport2_quadra_type66__redline_prototype.ent
+  appearanceName: quadra_type66__redline_prototype
+  affiliation: Factions.Unaffiliated
+  icon:
+    atlasPartName: quadra_type66_gt
+    atlasResourcePath: base\gameplay\gui\common\icons\quadra_type_66_gt_icon.inkatlas
+  archetypeName: vehicle
+  manufacturer: Vehicle.manufacturer_quadra
+  vehicleUIData:
+    driveLayout: LocKey#45372
+    horsepower: 616
+    info: LocKey#Gameplay-Vehicles-Information-Type66Katya
+    mass: 2111
+    productionYear: 2073
+  displayName: LocKey#Gameplay-Vehicles-DisplayName-Type66Katya
+  player_Cudio_resource: v_car_villefort_deleon
+  traffic_Cudio_resource: v_car_villefort_deleon_traffic
+  weapons:
+    - !append dwa_militech_pc39m_left
+    - !append dwa_militech_pc39m_right
+  vehDataPackage:
+    $base: Vehicle.v_sport2_villefort_deleon_vindicator_inline0
+    driverCombat: DriverCombatTypes.MountedWeapons
+  vehWheelDimensionsSetup: 
+    backPreset: 
+      rimRadius: 0.319999993
+      tireRadius: 0.400000006
+      tireWidth: 0.430000007
+      wheelOffset: 0.219999999
+    frontPreset: 
+      rimRadius: 0.319999993
+      tireRadius: 0.400000006
+      tireWidth: 0.300000012
+      wheelOffset: 0.140000001
+  vehDriveModelData:
+    $base: Vehicle.VehicleDriveModelData_Sport_RWD
+    airResistanceFactor: 1.1
+    brakingFrictionFactor: 2.0
+    chassis_mass: 2111
+    total_mass: 2111
+    handbrakeBrakingTorque: 1800
+    turningRollFactor: 0.75
+    wheelSetup:
+      $base: Vehicle.VehicleWheelDrivingSetup_4_AWD
+      frontPreset:
+        $base: Vehicle.VehicleWheelDrivingPreset_4_AWD_Front
+        tireFrictionCoef: 1.6
+      backPreset:
+        $base: Vehicle.VehicleWheelDrivingPreset_4_AWD_Rear
+        tireFrictionCoef: 1.5
+      LB:
+        isDrive: True
+        isHandBrake: True
+        isMainBrake: True
+      RB:
+        isDrive: True
+        isHandBrake: True
+        isMainBrake: True
+      LF:
+        isDrive: True
+        isHandBrake: False
+        isMainBrake: True
+      RF:
+        isDrive: True
+        isHandBrake: False
+        isMainBrake: True
+# ==================================
+
+Vehicle.vehicle_list.list:
+  - !append Vehicle.v_sport3_quadra_type66_redline_katya
+Vehicle.v_sport3_quadra_type66_redline_katya.dealerPrice: 45000
+Vehicle.v_sport3_quadra_type66_redline_katya.dealerCred: 10
+
+# === CET ADD-TO-GARAGE CODES: === 
+# Game.GetVehicleSystem():EnablePlayerVehicle('Vehicle.v_sport3_quadra_type66_redline_katya', true, false)
+
+#Militech PC36M Plasma Cannons
+militech_pc39m_left:
+  $base: Vehicle.Vehicle_Power_Weapon_Left_B
+  item: militech_pc39m_left_item
+
+militech_pc39m_left_item:
+  $base: Items.Vehicle_Power_Weapon_Left_B
+  attacks:
+    - !remove Attacks.VehicleTurretProjectile
+    - !append militech_pc39m_bullet
+  statModifierGroups:
+    - !remove Items.Base_Weapon_Damage_Type_Physical
+    - !remove Items.Base_Vehicle_Power_Weapon_Damage_Stats
+    - !remove Items.Base_Vehicle_Power_Weapon_Technical_Stats
+    - !append militech_pc39m_physical_damage
+    - !append militech_pc39m_damage_stats
+    - !append militech_pc39m_technical_stats
+
+militech_pc39m_Right:
+  $base: Vehicle.Vehicle_Power_Weapon_Right_B
+  item: militech_pc39m_Right_item
+
+militech_pc39m_Right_item:
+  $base: Items.Vehicle_Power_Weapon_Right_B
+  attacks:
+    - !remove Attacks.VehicleTurretProjectile
+    - !append militech_pc39m_bullet
+  statModifierGroups:
+    - !remove Items.Base_Weapon_Damage_Type_Physical
+    - !remove Items.Base_Vehicle_Power_Weapon_Damage_Stats
+    - !remove Items.Base_Vehicle_Power_Weapon_Technical_Stats
+    - !append militech_pc39m_physical_damage
+    - !append militech_pc39m_damage_stats
+    - !append militech_pc39m_technical_stats
+
+militech_pc39m_bullet:
+  $base: Attacks.PlasmaProjectile
+  explosionAttack: militech_pc39m_explosion
+  statModifiers:
+    - !remove Attacks.PlasmaProjectileDamageNull
+    - !append Attacks.PlasmaProjectileDamage
+  velocity: 80
+  projectileAccelOverride: 125
+
+militech_pc39m_explosion:
+  $base: Attacks.BulletExplosion
+  statModifiers:
+    - !remove AttackModifier.BaseBulletExplosionDamage
+    - !append militech_pc39m_explosion_damagemod
+
+militech_pc39m_explosion_damagemod:
+  $base: AttackModifier.BaseBulletExplosionDamage
+  value: 5
+
+militech_pc39m_physical_damage:
+  $base: Items.Base_Weapon_Damage_Type_Physical
+  statModifiers:
+    - !remove Items.Base_Weapon_Damage_Type_Physical_inline0
+    - !append militech_pc39m_physical_damage_inline0
+
+militech_pc39m_physical_damage_inline0:
+  $base: Items.Base_Weapon_Damage_Type_Physical_inline0
+  value: 14
+
+militech_pc39m_damage_stats:
+  $base: Items.Base_Vehicle_Power_Weapon_Damage_Stats  
+  statModifiers:
+    - !remove Items.Base_Vehicle_Power_Weapon_Damage_Stats_inline2
+    - !append militech_pc39m_damage_stats_inline2
+
+militech_pc39m_damage_stats_inline2:
+  $base: Items.Base_Vehicle_Power_Weapon_Damage_Stats_inline2
+  value: 6
+
+militech_pc39m_technical_stats:
+  $base: Items.Base_Vehicle_Power_Weapon_Technical_Stats
+  statModifiers:
+    - !remove Items.Base_Vehicle_Power_Weapon_Technical_Stats_inline1
+    - !remove Items.Base_Vehicle_Power_Weapon_Technical_Stats_inline2
+    - !append militech_pc39m_technical_stats_inline1
+    - !append militech_pc39m_technical_stats_inline2
+
+militech_pc39m_technical_stats_inline1:
+  $base: Items.Base_Vehicle_Power_Weapon_Technical_Stats_inline1
+  value: 0.025
+
+militech_pc39m_technical_stats_inline2:
+  $base: Items.Base_Vehicle_Power_Weapon_Technical_Stats_inline2
+  value: 15
