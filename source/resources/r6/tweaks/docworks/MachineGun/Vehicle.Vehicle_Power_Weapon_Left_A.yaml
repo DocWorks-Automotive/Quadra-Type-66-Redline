@@ -1,0 +1,18 @@
+Vehicle.Vehicle_Power_Weapon_Left_A:
+  $type: gamedataVehicleWeapon_Record
+  attackRange: 150
+  canFriendlyFire: False
+  cycleTime: 0.100000001
+  genericShoot: False
+  genericTick: False
+  item: Items.Vehicle_Power_Weapon_Left_A
+  maxPitch: 0
+  maxYaw: 0
+  minPitch: 0
+  minYaw: 0
+  singleProjectileCycleTime: 0.1
+  singleShotProjectiles: 5
+  slot: AttachmentSlots.VehiclePowerWeaponLeftA
+  spread: 1
+  wholeBurstProjectiles: 5
+

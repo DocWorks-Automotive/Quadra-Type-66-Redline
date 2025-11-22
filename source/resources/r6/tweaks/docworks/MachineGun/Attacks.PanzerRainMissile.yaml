@@ -1,0 +1,58 @@
+Attacks.PanzerRainMissile:
+  $type: gamedataAttack_Projectile_Record
+  explosionAttack: Attacks.PanzerMissileEffect
+  projectileTemplateName: rain_missile_panzer
+  attackName: RainMissile
+  attackType: AttackType.Ranged
+  className: Attack_Projectile
+  explosionDamageVSVehicles: -1
+  hitReactionSeverityMax: -1
+  hitReactionSeverityMin: -1
+  playerIncomingDamageMultiplier: 1
+  range: 200
+  useDefaultAimData: False
+  userDataPath: Attacks.PanzerRainMissile
+  velocity: 90
+  hitFlags:
+    - FriendlyFire
+  staminaCost:
+    - Attacks.Bullet_Projectile_inline0
+    - Attacks.Bullet_Projectile_inline1
+    - Attacks.Bullet_Projectile_inline2
+    - Attacks.Bullet_Projectile_inline3
+    - Attacks.Bullet_Projectile_inline4
+  statModifierGroups:
+    - Items.Base_Panzer_Weapon_Stats
+    - Items.Base_HMG_Damage_Stats
+  statModifiers:
+    - Attacks.RainMissileDamage
+  statusEffects: []
+  p1AngleInVerticalPlane: 0
+  p1BendFactor: 0.5
+  p2AngleInHitPlaneMin: 0
+  p1PositionZOffset: 15
+  targetPositionXYAdditive: 1.20000005
+  playerPositionGrabTime: 1.89999998
+  explosionRadius: 4
+  gravitySimulation: 0
+  p1StartVelocity: 30
+  p2AngleInHitPlaneMax: 0
+  finalTargetPositionCalculationDelay: -1
+  p1BendTimeRatio: 0.5
+  p2StartVelocity: 120
+  p1DurationMax: 0.5
+  p1DurationMin: 0.100000001
+  p1PositionLateralOffset: 4
+  p2AngleInVerticalPlane: 1
+  puppetBroadphaseHitRadiusSquared: 4
+  targetPositionOffset: 3
+  hitCooldown: 0.100000001
+  p1AngleInHitPlaneMax: 0
+  p2BendFactor: 0
+  p1AngleInHitPlaneMin: 0
+  p2BendRation: 0
+  p1SnapRadius: 0.200000003
+  p1PositionForwardOffsetMin: -4
+  p1PositionForwardOffsetMax: 4
+  followTargetInPhase2: True
+  p2ShouldRotate: False

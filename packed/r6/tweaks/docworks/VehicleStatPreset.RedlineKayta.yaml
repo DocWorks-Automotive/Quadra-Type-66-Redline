@@ -1,0 +1,12 @@
+VehicleStatPreset.RedlineKatya:
+  $type: gamedataStatModifierGroup_Record
+  drawBasedOnStatType: False
+  optimiseCombinedModifiers: False
+  saveBasedOnStatType: False
+  statModsLimit: -1
+  relatedModifierGroups: []
+  statModifiers:
+    - VehicleStatPreset.RedlineKatya_inline0
+    - VehicleStatPreset.BaseCar_inline1
+    - BaseStats.BaseAudioStimRangeMultiplier
+    - BaseStats.BaseVisualStimRangeMultiplier

@@ -1,0 +1,9 @@
+Attacks.MissileDamage:
+  $type: gamedataStatModifierGroup_Record
+  drawBasedOnStatType: False
+  optimiseCombinedModifiers: False
+  saveBasedOnStatType: False
+  statModsLimit: -1
+  relatedModifierGroups: []
+  statModifiers:
+    - Items.Base_MissileDamage_Damage_Stats_inline0

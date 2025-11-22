@@ -1,0 +1,158 @@
+Items.Vehicle_Missile_Launcher_A:
+  $type: gamedataWeaponItem_Record
+  ammo: Ammo.Standard
+  baseEmptyReloadTime: 0
+  baseReloadTime: 0
+  damageType: DamageTypes.Physical
+  effectiveRangeFalloffCurve: StandardFalloff
+  evolution: WeaponEvolution.Power
+  forcedMinHitReaction: -1
+  fxPackage: WeaponFxPackage.VehicleMissileLauncher
+  fxPackageQuickMelee: WeaponFxPackage.QuickMeleeFxPackage
+  hudIcon: HUDWeaponIcons.Default
+  IsIKEnabled: True
+  manufacturer: WeaponManufacturer.Street
+  projectileEaseOutCurveName: ProjectileEaseOut
+  rangedAttacks: Attacks.RainMissilePackage
+  uninterruptibleEmptyReloadStart: 0
+  uninterruptibleReloadStart: 0
+  useForcedTBHZOffset: False
+  UseShootVFXOnlyOnFirstShot: False
+  animFeatureName: WeaponData
+  animName: ui_garment_pose
+  animSetResource: ''
+  audioName: wea_set_missile_vehicle
+  canDrop: True
+  crosshair: Crosshairs.Driver_Combat_Missile_Launcher
+  deprecated: False
+  dropObject: defaultItemDrop
+  enableNpcRPGData: False
+  entityName: blank_weapon
+  equipArea: EquipmentArea.Weapon
+  friendlyName: w_panzer_missile_launcher
+  garmentOffset: 0
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: False
+  itemCategory: ItemCategory.Weapon
+  itemSecondaryAction: ItemAction.Equip
+  itemType: ItemType.Wea_VehicleMissileLauncher
+  localizedName: ''
+  mass: 20
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  parentAttachmentType: ParentAttachmentType.Slot
+  powerLevelDeterminedByParent: False
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  stateMachineName: Weapon
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  savable: False
+  attacks:
+    - Attacks.PanzerRainMissile
+  ikOffset: {x: 0, y: 0, z: 0}
+  shootingPatternPackages: []
+  triggerModes:
+    - TriggerMode.FullAuto
+  animationParameters: []
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.BaseWeaponPrice
+    - Price.ItemQualityMultiplier
+    - Price.PlusTierMultiplier
+    - Price.BrokenItemPriceMult
+    - Price.IconicMultiplier
+    - Price.BuyPrice_StreetCred_Discount
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  connections: []
+  displayName: LocKey#50344
+  equipAreas: []
+  equipPrereqs: []
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  hairSkinnedMeshComponents: []
+  localizedDescription: LocKey#50344
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots:
+    - AttachmentSlots.VehicleMissileLauncherA
+  previewBBoxOverride: []
+  requiredSlots: []
+  sellPrice:
+    - Price.BaseWeaponPrice
+    - Price.ItemQualityMultiplier
+    - Price.PlusTierMultiplier
+    - Price.WeaponSellMultiplier
+    - Price.BrokenItemPriceMult
+    - Price.IconicMultiplier
+  slotPartList: []
+  slotPartListPreset: []
+  tags:
+    - Weapon
+    - RangedWeapon
+    - Preload
+    - Weapon
+    - Unique
+    - HeavyWeapon
+    - HideInUI
+    - SkipActivityLog
+  variants: []
+  visualTags:
+    - Default
+    - Neon
+    - Military
+    - Pimp
+  effectors: []
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+    - ItemAction.WeaponDisassemble
+  statModifierGroups:
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+    - Items.QualityRandomization
+    - Items.ItemPlusRandomizer_MaxQuality
+    - Items.ItemPlusRandomizer_Below_MaxQuality
+    - Items.WeaponModsWeights_On_Tier2Plus
+    - Items.WeaponModsWeights_On_Tier3Plus
+    - Items.WeaponModsWeights_On_Tier4Plus
+    - Items.WeaponModsWeights_On_Tier5Plus
+    - Items.WeaponModsWeights_On_Tier5PlusPlus
+    - Items.Base_Vehicle_Missle_Launcher_Damage_Stats
+    - Items.Base_Vehicle_Missile_Technical_Stats
+  statModifiers:
+    - Items.Vehicle_Missile_Launcher_inline0
+    - Items.Vehicle_Missile_Launcher_inline1
+    - Items.Vehicle_Missile_Launcher_inline2
+    - Items.Vehicle_Missile_Launcher_inline3
+  statPools: []
+  weakspots: []
+  audioEventName: VehicleMissileLauncher
+  weaponEdgesSharpness_aim: 0
+  weaponVignetteIntensity_aim: 0.5
+  weaponVignetteCircular: 0
+  weaponNearPlane: 5
+  weaponFarPlane: 50
+  weaponBlurIntensity_aim: 1
+  weaponVignetteRadius: 0
+  weaponEdgesSharpness: 0
+  weaponVignetteCircular_aim: 1
+  weaponVignetteIntensity: 0
+  safeActionDuration: 2
+  weaponVignetteRadius_aim: 0.600000024
+  weaponBlurIntensity: 1
+  weaponFarPlane_aim: 50
+  weaponNearPlane_aim: 15
+  hide_nametag: True

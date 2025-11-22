@@ -1,0 +1,19 @@
+Attacks.PlasmaProjectileEMP:
+  $type: gamedataAttack_Projectile_Record
+  projectileTemplateName: plasma_projectile
+  attackType: AttackType.Ranged
+  className: Attack_Projectile
+  explosionDamageVSVehicles: -1
+  hitReactionSeverityMax: -1
+  hitReactionSeverityMin: -1
+  playerIncomingDamageMultiplier: 1
+  range: 1200
+  useDefaultAimData: False
+  userDataPath: Attacks.SmartBullet
+  velocity: -1
+  hitFlags: []
+  staminaCost: []
+  statModifiers:
+    - Attacks.PlasmaProjectileEMP_inline0
+  statusEffects: []
+  hitCooldown: 0.5

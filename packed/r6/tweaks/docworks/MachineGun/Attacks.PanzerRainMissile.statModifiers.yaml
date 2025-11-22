@@ -1,0 +1,3 @@
+Attacks.PanzerRainMissile.statModifiers:
+  - Attacks.RainMissileDamage
+  - Attacks.MissileDamage

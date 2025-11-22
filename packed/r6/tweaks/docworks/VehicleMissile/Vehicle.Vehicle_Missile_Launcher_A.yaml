@@ -1,0 +1,18 @@
+Vehicle.Vehicle_Missile_Launcher_A:
+  $type: gamedataVehicleWeapon_Record
+  attackRange: 150
+  canFriendlyFire: False
+  cycleTime: 0.5
+  genericShoot: True
+  genericTick: True
+  item: Items.Vehicle_Missile_Launcher_A
+  maxPitch: 0
+  maxYaw: 0
+  minPitch: 0
+  minYaw: 0
+  singleProjectileCycleTime: 0.0070000009
+  singleShotProjectiles: 10
+  slot: AttachmentSlots.VehicleMissileLauncherA
+  spread: 0
+  weaponShootAnimEvent: shoot_rocket
+  wholeBurstProjectiles: 20
