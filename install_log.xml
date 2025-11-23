@@ -1,50 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<InstalLog Project="Type-66 RedLine" Build_date="11/22/2025 2:06:55 PM">
+<InstalLog Project="DWA_Quadra_Type66_RedLine" Build_date="24.11.2025 00:26:36">
   <Files>
-    <Directory Path="C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\archive">
-      <Directory Path="C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\archive\pc">
-        <Directory Path="C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\archive\pc\mod">
-          <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\archive\pc\mod\DWA_Redline.archive</file>
-          <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\archive\pc\mod\dwa_type66_redline.xl</file>
+    <Directory Path="E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\archive">
+      <Directory Path="E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\archive\pc">
+        <Directory Path="E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\archive\pc\mod">
+          <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\archive\pc\mod\DWA_Quadra_Type66_RedLine.archive</file>
+          <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\archive\pc\mod\dwa_type66_redline.xl</file>
         </Directory>
       </Directory>
     </Directory>
-    <Directory Path="C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6">
-      <Directory Path="C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks">
-        <Directory Path="C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks">
-          <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleStatPreset.RedlineKayta.yaml</file>
-          <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\v_sport3_quadra_type66_redline_katya.yaml</file>
-          <Directory Path="C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun">
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Attacks.PanzerRainMissile.statModifiers.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Attacks.PanzerRainMissile.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Attacks.PlasmaProjectileEMP.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_HMG_Damage_Stats.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_HMG_Damage_Stats_inline0.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Smart_Submachinegun_Mult_Stats.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Smart_Submachinegun_Mult_Stats_inline1.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline12.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline13.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline18.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline19.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline20.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline21.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline22.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_Technical_Stats.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_Technical_Stats_inline1.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_Technical_Stats_inline3.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Vehicle_Power_Weapon_Left_A.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Vehicle_Power_Weapon_Right_A.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Vehicle.Vehicle_Power_Weapon_Left_A.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Vehicle.Vehicle_Power_Weapon_Right_B.yaml</file>
+    <Directory Path="E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6">
+      <Directory Path="E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks">
+        <Directory Path="E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks">
+          <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleStatPreset.RedlineKayta.yaml</file>
+          <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\v_sport3_quadra_type66_redline_katya.yaml</file>
+          <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\v_sport3_quadra_type66_redline_katya_ORIGINAL.rar</file>
+          <Directory Path="E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun">
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Attacks.PanzerRainMissile.statModifiers.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Attacks.PanzerRainMissile.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Attacks.PlasmaProjectileEMP.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_HMG_Damage_Stats.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_HMG_Damage_Stats_inline0.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Smart_Submachinegun_Mult_Stats.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Smart_Submachinegun_Mult_Stats_inline1.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline12.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline13.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline18.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline19.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline20.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline21.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_SmartGun_Stats_inline22.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_Technical_Stats.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_Technical_Stats_inline1.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Base_Warden_Technical_Stats_inline3.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Vehicle_Power_Weapon_Left_A.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Items.Vehicle_Power_Weapon_Right_A.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Vehicle.Vehicle_Power_Weapon_Left_A.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\MachineGun\Vehicle.Vehicle_Power_Weapon_Right_B.yaml</file>
           </Directory>
-          <Directory Path="C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile">
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile\Items.Base_Vehicle_Missile_Technical_Stats.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile\Items.Base_Vehicle_Missile_Technical_Stats_inline1.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile\Items.Base_Vehicle_Missile_Technical_Stats_inline3.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile\Items.Vehicle_Missile_Launcher_A.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile\Items.Vehicle_Missile_Launcher_inline2.yaml</file>
-            <file>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile\Vehicle.Vehicle_Missile_Launcher_A.yaml</file>
+          <Directory Path="E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile">
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile\Items.Base_Vehicle_Missile_Technical_Stats.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile\Items.Base_Vehicle_Missile_Technical_Stats_inline1.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile\Items.Base_Vehicle_Missile_Technical_Stats_inline3.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile\Items.Vehicle_Missile_Launcher_A.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile\Items.Vehicle_Missile_Launcher_inline2.yaml</file>
+            <file>E:\Games\Steam Library\steamapps\common\Cyberpunk 2077\r6\tweaks\docworks\VehicleMissile\Vehicle.Vehicle_Missile_Launcher_A.yaml</file>
           </Directory>
         </Directory>
       </Directory>

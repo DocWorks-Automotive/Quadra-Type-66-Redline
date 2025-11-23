@@ -1,4 +1,7 @@
 localization:
   onscreens:
     en-us:
-      - dwa\dwa_quadra_type66_redline\localization\localization_type66_katya.json
+      - dwa\dwa_quadra_type66_redline\gameplay\localization\dwa_quadra_type66_redline_lang_en.json
+    
+    ru-ru:
+      - dwa\dwa_quadra_type66_redline\gameplay\localization\dwa_quadra_type66_redline_lang_ru.json
