@@ -139,7 +139,7 @@ Vehicle.v_sport3_quadra_type66_redline_katya:
     $base: Vehicle.VehicleDestructionParamsDeleon
     detachableParts:
       - !remove Vehicle.VehicleDestructionParamsDeleon_inline16
-  entityTemplatePath: dwa\dwa_quadra_type66_redline\gameplay\v_sport2_quadra_type66__redline.ent
+  entityTemplatePath: dwa\dwa_quadra_type66_redline\gameplay\v_sport2_quadra_type66__redline_prototype.ent
   appearanceName: quadra_type66__redline_prototype
 
 # OJ: Bloody hell, did you build this thing from scratch??
