@@ -1,15 +1,155 @@
-# Vehicle ————————————————————————————————————————————————————————————————————————————————————————————————
-Vehicle.v_sport3_quadra_type66_redline_katya:
-  $base: Vehicle.v_sport2_villefort_deleon_vindicator
-  entityTemplatePath: dwa\dwa_quadra_type66_redline\gameplay\dwa_quadra_type66_redline.ent
-  appearanceName: quadra_type66__redline_prototype
-  # destroyedAppearance: quadra_type66__redline_burnt_01
+# === CET ADD-TO-GARAGE CODES: === 
+# Game.GetVehicleSystem():EnablePlayerVehicle('Vehicle.v_sport3_quadra_type66_redline_katya', true, false)
+# Oranje 3 re-order of code & switch to Shion base vehicle with matching .ent update
+# Oranje 3 2.31 game version update
+# V1.0.0-B5
+#################################################### O3 Custom Inlines moved to top of file #########################
+#################################################### Weapons ########################################################
+#Militech PC36M Plasma Cannons
+militech_pc39m_Power_Weapon_Left_B:
+  $base: Vehicle.Vehicle_Power_Weapon_Left_B
+  item: militech_pc39m_Item_Power_Weapon_Left_B
+  
+# Katya to Oj: See these? Cost me almost everything, but most ridiculous thing to go on a car
 
-  displayName: LocKey#Gameplay-Vehicles-DisplayName-Type66Katya
+militech_pc39m_Power_Weapon_Right_B:
+  $base: Vehicle.Vehicle_Power_Weapon_Right_B
+  item: militech_pc39m_Item_Power_Weapon_Right_B
+  
+# OJ: Phwoar, these things are unhinged. I love it!
+# NX: Frankly, I can't believe someone thought to even try and do this.
+
+militech_pc39m_Item_Power_Weapon_Left_B:
+  $base: Items.Vehicle_Power_Weapon_Left_B
+  attacks:
+    - !remove Attacks.VehicleTurretProjectile
+    - !append militech_pc39m_attacks_plasma
+  statModifierGroups:
+    - !remove Items.Base_Vehicle_Power_Weapon_Technical_Stats
+    - !append militech_pc39m_Item_Power_Weapon_Technical_Stats
+    - !append Items.Base_Smart_Stats
+  statModifiers:
+    - !append BaseStats.SmartGunTrackHeadComponents
+  tags:
+    - Weapon
+    - RangedWeapon
+    - inventoryDoubleSlot
+    - LMG
+    - PowerWeapon
+    - Preload
+    - Weapon
+    - LMG
+    - HideInUI
+    - SkipActivityLog
+    - Smart
+    - SmartWeapon
+  triggerEffectName: te_wea_aim_mid
+
+militech_pc39m_Item_Power_Weapon_Right_B:
+  $base: Items.Vehicle_Power_Weapon_Right_B
+  attacks:
+    - !remove Attacks.VehicleTurretProjectile
+    - !append militech_pc39m_attacks_plasma
+  statModifierGroups:
+    - !remove Items.Base_Vehicle_Power_Weapon_Technical_Stats
+    - !append militech_pc39m_Item_Power_Weapon_Technical_Stats
+    - !append Items.Base_Smart_Stats
+  statModifiers:
+    - !append BaseStats.SmartGunTrackHeadComponents
+  tags:
+    - Weapon
+    - RangedWeapon
+    - inventoryDoubleSlot
+    - LMG
+    - PowerWeapon
+    - Preload
+    - Weapon
+    - LMG
+    - HideInUI
+    - SkipActivityLog
+    - Smart
+    - SmartWeapon
+  triggerEffectName: te_wea_aim_mid
+
+#OJ: Oh I have some ideas...
+
+militech_pc39m_Item_Power_Weapon_Technical_Stats:
+  $base: Items.Base_Vehicle_Power_Weapon_Technical_Stats
+  statModifiers:
+    - !remove Items.Base_Vehicle_Power_Weapon_Technical_Stats_inline2
+    - !append militech_pc39m_Item_Power_Weapon_Technical_Stats_inline2
+
+militech_pc39m_Item_Power_Weapon_Technical_Stats_inline2:
+  $base: Items.Base_Vehicle_Power_Weapon_Technical_Stats_inline2
+  value: 2000
+
+militech_pc39m_attacks_plasma:
+  $base: Attacks.PlasmaProjectile
+  projectileTemplateName: plasma_projectile
+  attackType: AttackType.Ranged
+  className: Attack_Projectile
+  explosionAttack: Attacks.VehicleMissileLauncherMissileEffect
+  explosionDamageVSVehicles: -1
+  hitReactionSeverityMax: -1
+  hitReactionSeverityMin: -1
+  playerIncomingDamageMultiplier: 1
+  range: 2 #200
+  useDefaultAimData: False
+  userDataPath: Attacks.PlasmaProjectile
+  velocity: 80 #-1
+  hitFlags: []
+  staminaCost:
+    - Attacks.Bullet_Projectile_inline0
+    - Attacks.Bullet_Projectile_inline1
+    - Attacks.Bullet_Projectile_inline2
+    - Attacks.Bullet_Projectile_inline3
+    - Attacks.Bullet_Projectile_inline4
+  statModifiers:
+    - !remove Attacks.PlasmaProjectileDamageNull
+    - !append militech_pc39m_attacks_plasma_damage
+    - !append AttackModifier.BaseBulletExplosionDamage
+    - !append AttackModifier.BaseAlliedDamage
+    - !append AttackModifier.PhysicalAlliedDamage
+    - !append AttackModifier.ElectricAlliedDamage
+    - !append AttackModifier.ThermalAlliedDamage
+    - !append AttackModifier.ChemicalAlliedDamage
+    - !append AttackModifier.EnemyDamage
+    - !append AttackModifier.PhysicalEnemyDamage
+    - !append AttackModifier.ThermalEnemyDamage
+    - !append AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !append AttackModifier.OneShotKillDamage
+  statusEffects: []
+  hitCooldown: 0.1000000001 #0.5
+
+# NX: Concerning. But I will say they pack a PUNCH.
+# Kat: Car need much modification to accomodate. Needed apply lessons from my тато to build her.
+
+militech_pc39m_attacks_plasma_damage:
+  $base: Attacks.PlasmaProjectileDamage
+  opSymbol: '*'
+  refObject: Owner #Root #Parent #
+  refStat: BaseStats.PhysicalDamage #BaseStats.BaseDamage #BaseStats.DPS
+  value: 10000
+  modifierType: Additive
+  statType: BaseStats.PhysicalDamage
+
+Vehicle.v_sport3_quadra_type66_redline_katya:
+  $base: Vehicle.v_sport2_mizutani_shion_nomad_player #Vehicle.v_sport2_villefort_deleon_vindicator  # OJ3 update for weapons systems
+  destruction:
+    $base: Vehicle.VehicleDestructionParamsDeleon
+    detachableParts:
+      - !remove Vehicle.VehicleDestructionParamsDeleon_inline16
+  entityTemplatePath: dwa\dwa_quadra_type66_redline\gameplay\v_sport2_quadra_type66__redline.ent
+  appearanceName: quadra_type66__redline_prototype
+
+# OJ: Bloody hell, did you build this thing from scratch??
+# Kat: Most. Bought scrapped Avenger frame with brakes. Rest was built on after. Made heavy result.
+
+  affiliation: Factions.Unaffiliated
   icon:
     atlasPartName: quadra_type66_gt
     atlasResourcePath: base\gameplay\gui\common\icons\quadra_type_66_gt_icon.inkatlas
-
+  archetypeName: vehicle
   manufacturer: Vehicle.manufacturer_quadra
   vehicleUIData:
     driveLayout: LocKey#45372
@@ -17,37 +157,111 @@ Vehicle.v_sport3_quadra_type66_redline_katya:
     info: LocKey#Gameplay-Vehicles-Information-Type66Katya
     mass: 2111
     productionYear: 2073
+  displayName: LocKey#Gameplay-Vehicles-DisplayName-Type66Katya
+  player_audio_resource: v_car_quadra_type_66_rogue
+  traffic_audio_resource: v_car_quadra_type_66_rogue_traffic
 
-  player_Cudio_resource: v_car_villefort_deleon
-  traffic_Cudio_resource: v_car_villefort_deleon_traffic
-  # player_audio_resource: v_car_villefort_deleon
-  # traffic_audio_resource: v_car_villefort_deleon_traffic
+# NX: Heavy doesn't quite cover it. She weighs 90% as much as an Alvarado.
+# OJ: Oh well you've slapped on about the thickest panels the frame can handle. Armour?
 
-  #affiliation: Factions.Unaffiliated
-  #archetypeName: vehicle
+  statModifierGroups:
+    #- !remove VehicleStatPreset.BaseCar
+    - !append VehicleStatPreset.BaseTank
+    #- !append VehicleStatPreset.Prevention
+    - !append VehicleStatPreset.VeryDurable
+
+# Kat: Well weapons and powerpack dangerous if shot, so needed protection. Crude but effective.
 
   vehDataPackage:
-    $base: Vehicle.v_sport2_villefort_deleon_vindicator_inline0
-    driverCombat: DriverCombatTypes.MountedWeapons
-
-  # weapons ——————————————————————————————————————————
-  weapons:
-    - !append dwa_militech_pc39m_left
-    - !append dwa_militech_pc39m_right
-  
-  # handling ——————————————————————————————————————————   
-  vehWheelDimensionsSetup: 
-    backPreset: 
+    $base: Vehicle.v_sport2_quadra_type66_avenger_inline1  #Vehicle.v_sport2_villefort_deleon_vindicator_inline0  #OJ3 switched to correct vehicle
+    barnDoorsTailgate: False
+    body_dump_close_trunk_delay: 2.5
+    canStoreBody: False
+    combatEntering: 0.670000017
+    disableSwitchSeats: False
+    driverCombat: DriverCombatTypes.MountedWeapons #DriverCombatTypes.Standard
+    entering: 2.4000001
+    exitDelay: 0.400000006
+    fromCombat: 0.800000012
+    hasSpoiler: False
+    hasTurboCharger: False
+    immediate_open_close_duration: 9.99999975E-05
+    interactiveHood: False
+    interactiveTrunk: False
+    knockOffForce: 13
+    normal_open: 1.70000005
+    open_close_duration: 1.20000005
+    parkingAngle: 0
+    seatingTemplateOverride: sport2_vehicle
+    slideDuration: 0.800000012
+    slidingRearDoors: False
+    speedToClose: 2
+    spoilerSpeedToDeploy: 20
+    spoilerSpeedToRetract: 10
+    stealing: 3.70000005
+    stealing_open: 3.29999995
+    switchSeats: 1.54999995
+    tireOnVehicleDamageImpulseScalor: 30
+    toCombat: 0.699999988
+    useAuxiliary: False
+    vehSeatSet: Vehicle.Vehicle2SeatSetDefault
+    wheelBumperLengthScalor: 1
+    wheelBumperVertOffsetScalor: 0.449999988
+    wheelBumperWidthScalor: 1
+    windowsRollDown: True
+    additionalAnimFeatures: []
+    animVars:
+      - sport2_vehicle_seat_front_left
+      - sport2_vehicle_seat_front_right
+      - sport2_vehicle_seat_back_left
+      - sport2_vehicle_seat_back_right
+    boneNames:
+      - seat_front_left
+      - seat_front_right
+      - seat_back_left
+      - seat_back_right
+  ############################################################### Engine data ####################################
+# OJ: Right, but why did you go with a 680's engine? Underpowered even for the frame you used, let alone the rest
+# Kat: All I could find and afford. She needed engine and was only fit I could buy
+# NX: Gods, do I ever understand THAT
+  vehEngineData:
+    $base: Vehicle.v_sport2_villefort_deleon_vindicator_inline10   #OJ3 correct inline added and all engine data
+    engineMaxTorque: 510
+    fastR1GearChange: True
+    finalGearTorqueDecimationScalor: 0.850000024
+    flyWheelMomentOfInertia: 0.300000012
+    forceReverseRPMToMin: False
+    gearChangeCooldown: 0.300000012
+    gearChangeTime: 0.239999995
+    gearCurvesPath: base\gameplay\vehicles\curves\engine_torque\med_balanced_sc.curveset
+    maxRPM: 6900
+    minRPM: 1200
+    resistanceTorque: 80
+    reverseDirDelay: 0.300000012
+    wheelsResistanceRatio: 15
+    gears:
+      - Vehicle.VehicleEngineData_4_Regular_Large_SC_inline0
+      - Vehicle.VehicleEngineData_4_Regular_Large_SC_inline1
+      - Vehicle.VehicleEngineData_4_Regular_Large_SC_inline2
+      - Vehicle.VehicleEngineData_4_Regular_Large_SC_inline3
+      - Vehicle.VehicleEngineData_4_Regular_Large_SC_inline4
+      - Vehicle.VehicleEngineData_4_Regular_Large_SC_inline5
+      - Vehicle.VehicleEngineData_4_Regular_Large_SC_inline6
+      - Vehicle.VehicleEngineData_4_Regular_Large_SC_inline7
+  vehWheelDimensionsSetup:
+    $base: Vehicle.v_sport2_villefort_deleon_vindicator_inline2  #OJ3 added base class
+    backPreset:
+      $base: Vehicle.v_sport2_villefort_deleon_vindicator_inline4   #OJ3 added base class
       rimRadius: 0.319999993
       tireRadius: 0.400000006
       tireWidth: 0.430000007
       wheelOffset: 0.219999999
-    frontPreset: 
+    frontPreset:
+      $base: Vehicle.v_sport2_villefort_deleon_vindicator_inline3   #OJ3 added base class
       rimRadius: 0.319999993
       tireRadius: 0.400000006
       tireWidth: 0.300000012
       wheelOffset: 0.140000001
-
   vehDriveModelData:
     $base: Vehicle.VehicleDriveModelData_Sport_RWD
     airResistanceFactor: 1.1
@@ -56,14 +270,65 @@ Vehicle.v_sport3_quadra_type66_redline_katya:
     total_mass: 2111
     handbrakeBrakingTorque: 1800
     turningRollFactor: 0.75
+
+# OJ: Being real for a moment, this AWD conversion is lush, girl.
+# Kat: Thank you. Had no choice because she is heavy like this. Control was awful but her grip now is best.
+# NX: I also seem to recall you pulled the suspension from a Thrax?
+
     wheelSetup:
       $base: Vehicle.VehicleWheelDrivingSetup_4_AWD
       frontPreset:
         $base: Vehicle.VehicleWheelDrivingPreset_4_AWD_Front
         tireFrictionCoef: 1.6
+        extremeCompressionEventScalor: 0.699999988
+        frictionMulLateral: 0.860000014
+        frictionMulLongitudinal: 0.650000005
+        logicalSuspensionCompressionLength: 0
+        mass: 25
+        maxBrakingTorque: 700
+        springBoundDampingLowRate: 2000
+        springDamping: 3600
+        springDampingHighRateCompression: 0.5
+        springDampingLowRateCompression: 0.300000012
+        springReboundDamping: 3300
+        springReboundDampingLowRate: 1800
+        springStiffness: 25
+        swaybarStiffness: 13
+        swaybarLengthScalar: 2.3
+        swaybarDisplacementLimit: 0.27
+        tenderSpringLength: 0
+        tireLateralSlipEffectsMul: 0.649999976
+        tireLongitudinalSlipEffectsMul: 1
+        tireRollingResistanceCoef: 0.00200000009
+        visualSuspensionCompressionLength: 0.00999999978
+        visualSuspensionDroop: 0.150000006
+        wheelsVerticalOffset: 0.0200000007
       backPreset:
         $base: Vehicle.VehicleWheelDrivingPreset_4_AWD_Rear
         tireFrictionCoef: 1.5
+        extremeCompressionEventScalor: 0.699999988
+        frictionMulLateral: 0.860000014
+        frictionMulLongitudinal: 0.860000014
+        logicalSuspensionCompressionLength: 0
+        mass: 25
+        maxBrakingTorque: 600
+        springBoundDampingLowRate: 1900
+        springDamping: 3500
+        springDampingHighRateCompression: 0.5
+        springDampingLowRateCompression: 0.300000012
+        springReboundDamping: 3200
+        springReboundDampingLowRate: 1700
+        springStiffness: 25
+        swaybarStiffness: 13
+        swaybarLengthScalar: 2.3
+        swaybarDisplacementLimit: 0.27
+        tenderSpringLength: 0
+        tireLateralSlipEffectsMul: 0.899999976
+        tireLongitudinalSlipEffectsMul: 1
+        tireRollingResistanceCoef: 0.00200000009
+        visualSuspensionCompressionLength: 0.25
+        visualSuspensionDroop: 0.150000006
+        wheelsVerticalOffset: 0.0500000007
       LB:
         isDrive: True
         isHandBrake: True
@@ -79,115 +344,25 @@ Vehicle.v_sport3_quadra_type66_redline_katya:
       RF:
         isDrive: True
         isHandBrake: False
-        isMainBrake: True
+        isMainBrake: True  
 
+# Kat: Yes. Needed something I know handle such weight, and Thrax was closest
+# OJ: So lemme get this straight: You took an Avenger salvage, slapped in a 680's engine, Thrax suspension, and a pair of Militech Centaur plasma cannons...because you could?
+# Kat: Beautiful, isn't it?
+# OJ: You are CRAZY
 
-# Virtual Car Dealer —————————————————————————————————————————————————————————————————————————————————————
-
-# appereance: prototype
-Vehicle.v_sport3_quadra_type66_redline_katya.dealerPrice: 45000
-Vehicle.v_sport3_quadra_type66_redline_katya.dealerCred: 10
-
-# Vehicle List ——————————————————————————————————————————————————————————————————————————————————————————
+  weapons:
+    - !remove Vehicle_Power_Weapon_Left_B
+    - !remove Vehicle_Power_Weapon_Right_B
+    - !append militech_pc39m_Power_Weapon_Left_B
+    - !append militech_pc39m_Power_Weapon_Right_B
+# ==================================
 
 Vehicle.vehicle_list.list:
   - !append Vehicle.v_sport3_quadra_type66_redline_katya
 
-# Game.GetVehicleSystem():EnablePlayerVehicle('Vehicle.v_sport3_quadra_type66_redline_katya', true, false)
+############################################################### Virtual car dealer data ################################
+Vehicle.v_sport3_quadra_type66_redline_katya.dealerPrice: 45000
+Vehicle.v_sport3_quadra_type66_redline_katya.dealerCred: 10
+############################## need to add icon and image for VCD below ################################################
 
-
-# --------------------------------------------------------------------------------------------------------------------------------
-
-#Militech PC36M Plasma Cannons
-militech_pc39m_left:
-  $base: Vehicle.Vehicle_Power_Weapon_Left_B
-  item: militech_pc39m_left_item
-
-militech_pc39m_left_item:
-  $base: Items.Vehicle_Power_Weapon_Left_B
-  attacks:
-    - !remove Attacks.VehicleTurretProjectile
-    - !append militech_pc39m_bullet
-  statModifierGroups:
-    - !remove Items.Base_Weapon_Damage_Type_Physical
-    - !remove Items.Base_Vehicle_Power_Weapon_Damage_Stats
-    - !remove Items.Base_Vehicle_Power_Weapon_Technical_Stats
-    - !append militech_pc39m_physical_damage
-    - !append militech_pc39m_damage_stats
-    - !append militech_pc39m_technical_stats
-
-militech_pc39m_Right:
-  $base: Vehicle.Vehicle_Power_Weapon_Right_B
-  item: militech_pc39m_Right_item
-
-militech_pc39m_Right_item:
-  $base: Items.Vehicle_Power_Weapon_Right_B
-  attacks:
-    - !remove Attacks.VehicleTurretProjectile
-    - !append militech_pc39m_bullet
-  statModifierGroups:
-    - !remove Items.Base_Weapon_Damage_Type_Physical
-    - !remove Items.Base_Vehicle_Power_Weapon_Damage_Stats
-    - !remove Items.Base_Vehicle_Power_Weapon_Technical_Stats
-    - !append militech_pc39m_physical_damage
-    - !append militech_pc39m_damage_stats
-    - !append militech_pc39m_technical_stats
-
-militech_pc39m_bullet:
-  $base: Attacks.PlasmaProjectile
-  explosionAttack: militech_pc39m_explosion
-  statModifiers:
-    - !remove Attacks.PlasmaProjectileDamageNull
-    - !append Attacks.PlasmaProjectileDamage
-  velocity: 80
-  projectileAccelOverride: 125
-
-militech_pc39m_explosion:
-  $base: Attacks.BulletExplosion
-  statModifiers:
-    - !remove AttackModifier.BaseBulletExplosionDamage
-    - !append militech_pc39m_explosion_damagemod
-
-militech_pc39m_explosion_damagemod:
-  $base: AttackModifier.BaseBulletExplosionDamage
-  value: 5
-
-militech_pc39m_physical_damage:
-  $base: Items.Base_Weapon_Damage_Type_Physical
-  statModifiers:
-    - !remove Items.Base_Weapon_Damage_Type_Physical_inline0
-    - !append militech_pc39m_physical_damage_inline0
-
-militech_pc39m_physical_damage_inline0:
-  $base: Items.Base_Weapon_Damage_Type_Physical_inline0
-  value: 14
-
-militech_pc39m_damage_stats:
-  $base: Items.Base_Vehicle_Power_Weapon_Damage_Stats  
-  statModifiers:
-    - !remove Items.Base_Vehicle_Power_Weapon_Damage_Stats_inline2
-    - !append militech_pc39m_damage_stats_inline2
-
-militech_pc39m_damage_stats_inline2:
-  $base: Items.Base_Vehicle_Power_Weapon_Damage_Stats_inline2
-  value: 6
-
-militech_pc39m_technical_stats:
-  $base: Items.Base_Vehicle_Power_Weapon_Technical_Stats
-  statModifiers:
-    - !remove Items.Base_Vehicle_Power_Weapon_Technical_Stats_inline1
-    - !remove Items.Base_Vehicle_Power_Weapon_Technical_Stats_inline2
-    - !append militech_pc39m_technical_stats_inline1
-    - !append militech_pc39m_technical_stats_inline2
-
-militech_pc39m_technical_stats_inline1:
-  $base: Items.Base_Vehicle_Power_Weapon_Technical_Stats_inline1
-  value: 0.025
-
-militech_pc39m_technical_stats_inline2:
-  $base: Items.Base_Vehicle_Power_Weapon_Technical_Stats_inline2
-  value: 15
-
-# ================================
-# --------------------------------
-# ————————————————————————————————
